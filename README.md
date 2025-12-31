@@ -1,3 +1,17 @@
+# TODO configuration
+
+- [ ] Open LSP definition in new window
+- [ ] Make surround keymaps show up in which-key
+- [ ] Display the current symbol on the statusline
+- [ ] Make the scrollbar darker
+- [ ] Make startup faster
+- [ ] Make neo-tree stop prompting when current buffer not in cwd
+- [ ] Make neo-tree faster
+- [x] Install a lightweight GUI client without scrollbars blocking the TUI
+- [x] Reduce font size in Neovide
+- [x] Remove font ligatures in Neovide
+- [x] Move init.lua vim options to lua/custom/options.lua, or just lua/options.lua
+
 # kickstart-modular.nvim
 
 ## Introduction

@@ -72,3 +72,21 @@ vim.o.scrolloff = 10
 vim.o.confirm = true
 
 -- vim: ts=2 sts=2 sw=2 et
+
+-- Line numbers (hybrid)
+vim.opt.number = true
+vim.opt.relativenumber = true
+
+-- Indentation (general)
+vim.opt.autoindent = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 0
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 4
+vim.opt.smarttab = true
+vim.opt.shiftround = false
+
+-- Tabs / UI niceties
+vim.opt.tabpagemax = 100
+vim.opt.showcmd = true
+vim.opt.colorcolumn = '80'
