@@ -42,7 +42,9 @@ vim.keymap.set('n', ']b', '<cmd>bnext<CR>', { silent = true, desc = 'Next buffer
 vim.keymap.set('n', '[b', '<cmd>bprevious<CR>', { silent = true, desc = 'Previous buffer' })
 
 -- Use substitute-line to substitute-char instead (latter is overriden by nvim-surround plugin)
-vim.keymap.set('n', 'S', 'cl', { desc = 'Subsitute character (override)' })
+vim.keymap.set({ 'n', 'v' }, 'S', 'cl', { silent = true, desc = 'Subsitute character (override)' })
+
+vim.keymap.set('n', '<leader>c', '<cmd>CopilotChatToggle<CR>', { silent = true, desc = '[C]opilotChatToggle'})
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`

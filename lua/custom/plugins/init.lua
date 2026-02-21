@@ -42,11 +42,8 @@ return {
     build = "make tiktoken",
     opts = {
       auto_insert_mode = true,
+      model = 'claude-opus-4.6-1m',
     },
-    config = function()
-      local chat = require('CopilotChat')
-      vim.keymap.set('n', '<leader>c', chat.toggle, { desc = 'Toggle [C]opilot [C]hat'})
-    end
   },
   {
     'stevearc/aerial.nvim',
