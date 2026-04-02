@@ -34,18 +34,6 @@ return {
     end,
   },
   {
-    -- https://github.com/CopilotC-Nvim/CopilotChat.nvim?tab=readme-ov-file#usage
-    "CopilotC-Nvim/CopilotChat.nvim",
-    dependencies = {
-      { "nvim-lua/plenary.nvim", branch = "master" },
-    },
-    build = "make tiktoken",
-    opts = {
-      auto_insert_mode = true,
-      model = 'claude-opus-4.6-1m',
-    },
-  },
-  {
     'stevearc/aerial.nvim',
     opts = {-- optionally use on_attach to set keymaps when aerial has attached to a buffer
       on_attach = function(bufnr)

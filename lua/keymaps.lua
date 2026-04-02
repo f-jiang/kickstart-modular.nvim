@@ -44,8 +44,6 @@ vim.keymap.set('n', '[b', '<cmd>bprevious<CR>', { silent = true, desc = 'Previou
 -- Use substitute-line to substitute-char instead (latter is overriden by nvim-surround plugin)
 vim.keymap.set({ 'n', 'v' }, 'S', 'cl', { silent = true, desc = 'Subsitute character (override)' })
 
-vim.keymap.set('n', '<leader>c', '<cmd>CopilotChatToggle<CR>', { silent = true, desc = '[C]opilotChatToggle'})
-
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -57,17 +55,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
   callback = function()
     vim.hl.on_yank()
-  end,
-})
-
--- Makes sourced buffers' content automatically available to CopilotChat for context
-vim.api.nvim_create_autocmd('SourcePost', {
-  desc = 'Load all buffers from sourced session file into memory',
-  group = vim.api.nvim_create_augroup('load-sourced-buffers', { clear = true }),
-  callback = function()
-    for _, buf in ipairs(vim.api.nvim_list_bufs()) do
-      vim.fn.bufload(vim.fn.bufname(buf))
-    end
   end,
 })
 

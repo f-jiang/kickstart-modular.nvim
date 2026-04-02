@@ -2,6 +2,7 @@
 
 - [ ] Open LSP definition in new window
 - [ ] Make surround keymaps show up in which-key
+- [ ] Mapping to telescope [?] search TODO_feilanjiang hits
 - [ ] Display the current symbol on the statusline
 - [ ] Make the scrollbar darker
 - [ ] Make startup faster
